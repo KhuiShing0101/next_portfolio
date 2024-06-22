@@ -6,23 +6,23 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
   projects: [
     {
       id: getId(),
-      name: 'Pocket',
-      description: 'The Loyalty Program for the Digital Age.',
+      name: 'Life Young Healthy',
+      description: "Power Up Your Family's Wellness.",
       tasks:
-        'I strategically designed the cloud architecture, implemented the CI/CD pipeline and deployed the application on AWS with reliability and scalability in mind. I also participated in the performance optimization of the application.',
-      url: 'https://pocket.com.mm/',
-      img: '/images/pocket.png',
-      tags: ['VueJs', 'Laravel', 'AWS', 'CodeDeploy', 'AutoScaling'],
+        'I strategically developed Main Services Modules such as Body-Check, DNA-Check, Nutritionist,Vaccine,Children Treatment and Emotional Therapy.',
+      url: 'https://lyhealthy.com/en',
+      img: '/images/lifeyoung.png',
+      tags: ['PHP','Laravel','JavaScript','AJAX','Vanilla Js'],
     },
     {
       id: getId(),
-      name: 'Heal by Pun Hlaing',
+      name: 'HongKong Methodist Centre',
       description: 'First Telemedicine Platform in Myanmar.',
       tasks:
-        'Implemented the CI/CD pipeline and deployed the backend application on AWS. I also designed the cloud architecture and participated in the performance optimization of the application.',
-      url: 'https://play.google.com/store/apps/details?id=com.punhlaing.healapp&pcampaignid=web_share',
-      img: '/images/heal.png',
-      tags: ['AWS', 'API Gateway', 'Lambda', 'Serverless'],
+        'Developed database structure for multiple languages.(English, Simplified Chinese, Traditional Chinese, Arabic, and Indonesian) using ORM Eloquent. Dynamic content and images, multiple pages, and complex business logic are all key components of our project.',
+      url: 'https://p237.visibleone.io/en',
+      img: '/images/methodist.png',
+      tags: ['PHP','Laravel', 'JavaScript', 'AJAX','Vanilla Js'],
     },
   ],
 };

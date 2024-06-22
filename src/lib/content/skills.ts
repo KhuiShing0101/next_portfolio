@@ -4,37 +4,7 @@ import { getId } from '@/lib/utils/helper'
 export const skillsSection: SkillsSectionType = {
     title: 'what i do',
     skills: [
-    {
-        id: getId(),
-        title: 'Site Reliability Engineering',
-        // animation lottie file: https://lottiefiles.com/
-        lottie: {
-        light: '/lotties/cloudinfra.json',
-        dark: '/lotties/cloudinfra.json',
-        },
-        points: [
-        'Experience in designing and implementing scalable cloud solutions',
-        'Experience in automating infrastructure and CI/CD pipelines',
-        'Experience in monitoring and troubleshooting production issues',
-        'Experience in ensuring availability, performance, and scalability of systems and services',
-        ],
-        softwareSkills: [
-          // iconify icons: https://icon-sets.iconify.design/
-        { name: 'aws', icon: 'logos:aws' },
-        { name: 'docker', icon: 'logos:docker-icon' },
-        { name: 'ansible', icon: 'logos:ansible' },
-        { name: 'linux', icon: 'logos:linux-tux' },
-        { name: 'bash', icon: 'logos:bash' },
-        { name: 'terraform', icon: 'logos:terraform-icon' },
-        { name: 'circleci', icon: 'logos:circleci' },
-        { name: 'git', icon: 'logos:git-icon' },
-        { name: 'kubernetes', icon: 'logos:kubernetes' },
-        { name: 'prometheus', icon: 'logos:prometheus' },
-        { name: 'grafana', icon: 'logos:grafana' },
-        { name: 'datadog', icon: 'logos:datadog' },
-        ],
-    },
-    {
+      {
         id: getId(),
         title: 'Software Development',
         lottie: {
@@ -49,35 +19,41 @@ export const skillsSection: SkillsSectionType = {
         softwareSkills: [
         { name: 'php', icon: 'logos:php' },
         { name: 'laravel', icon: 'logos:laravel' },
-        { name: 'nodejs', icon: 'logos:nodejs-icon' },
-        { name: 'nextjs', icon: 'logos:nextjs' },
         { name: 'typescript', icon: 'logos:typescript-icon' },
-        { name: 'serverless', icon: 'logos:serverless' },
-        { name: 'mysql', icon: 'logos:mysql' },
+        { name: 'javascript', icon: 'logos:javascript' },
+        { name: 'nodejs', icon: 'logos:react' },
+        { name: 'nextjs', icon: 'logos:nextjs-icon' },
+        { name: 'vue', icon: 'logos:vue' },
+        { name: 'postgresql', icon: 'logos:postgresql' },
+        { name: 'prisma', icon: 'logos:prisma' },
+        { name: 'mysql', icon: 'logos:mysql-icon' },
+        { name: 'postman api', icon: 'logos:postman-icon' },
+
         ],
     },
+
     {
-      id: getId(),
-      title: 'Training Provider',
-      // animation lottie file: https://lottiefiles.com/
-      lottie: {
-      light: '/lotties/training.json',
-      dark: '/lotties/training.json',
-      },
-      points: [
-      'Experience in providing training for DevOps and SRE practices',
-      'Experience in providing training for AWS certifications',
-      'Experience in providing training for Software Development practices',
-      ],
-      softwareSkills: [
-          // iconify icons: https://icon-sets.iconify.design/
+        id: getId(),
+        title: 'Processing Skill set( deployment )',
+        lottie: {
+        light: '/lotties/cloudinfra.json',
+        dark: '/lotties/cloudinfra.json',
+        },
+        points: [
+        'Experience in designing and implementing scalable cloud solutions',
+        'Experience in automating infrastructure and CI/CD pipelines',
+        'Experience in ensuring availability, performance, and scalability of systems and services',
+        ],
+        softwareSkills: [
+        { name: 'Nginx', icon: 'logos:nginx' },
+        { name: 'Apache', icon: 'logos:apache' },
         { name: 'aws', icon: 'logos:aws' },
+        { name: 'lightsail', icon: 'logos:vercel-icon' },
         { name: 'docker', icon: 'logos:docker-icon' },
-        { name: 'ansible', icon: 'logos:ansible' },
         { name: 'linux', icon: 'logos:linux-tux' },
-        { name: 'terraform', icon: 'logos:terraform-icon' },
         { name: 'circleci', icon: 'logos:circleci' },
-        { name: 'git', icon: 'logos:git-icon' },
+        { name: 'github action', icon: 'logos:github-icon' },
+        { name: 'gitlab action', icon: 'logos:gitlab' },
         ],
     },
     ],

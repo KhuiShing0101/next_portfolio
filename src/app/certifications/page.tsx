@@ -1,21 +1,21 @@
-import {
-    Layout,
-    Certifications,
-    Contact,
-} from '@/containers';
+// import {
+//     Layout,
+//     Certifications,
+//     Contact,
+// } from '@/containers';
   
-  import type { NextPage } from 'next';
+//   import type { NextPage } from 'next';
   
-  const Page: NextPage = () => {
-    return (
-      <>
-        <Layout>
-          <Certifications />
-          <Contact />
-        </Layout>
-      </>
-    );
-  };
+//   const Page: NextPage = () => {
+//     return (
+//       <>
+//         <Layout>
+//           <Certifications />
+//           <Contact />
+//         </Layout>
+//       </>
+//     );
+//   };
   
-  export default Page;
+//   export default Page;
   

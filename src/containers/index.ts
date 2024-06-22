@@ -1,6 +1,5 @@
 import About from './About';
-import AboutWife from './AboutWife';
-import Certifications from './Certifications';
+// import Certifications from './Certifications';
 import Contact from './Contact';
 import Email from './Email';
 import Experience from './Experience';
@@ -16,8 +15,7 @@ import SocialLinks from './Social/SocialLinks';
 
 export {
   About,
-  AboutWife,
-  Certifications,
+  // Certifications,
   Contact,
   Email,
   Experience,

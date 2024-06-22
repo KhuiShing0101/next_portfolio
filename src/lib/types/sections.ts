@@ -26,14 +26,18 @@ export interface HeroSectionType extends Section {
     hideInDesktop?: boolean;
   };
 }
-
+export interface ListItemType {
+  title: string;
+  items: string[];
+}
 export interface AboutSectionType extends Section {
   list: {
     title: string;
-    items: string[];
+    items: ListItemType[];
   };
   img: string;
 }
+
 
 type CertificateType = {
   title: string;

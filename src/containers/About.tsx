@@ -1,7 +1,6 @@
 'use client';
 import { aboutSection } from '@/lib/content/about';
 import { author } from '@/lib/content/portfolio';
-import { getId } from '@/lib/utils/helper';
 
 import { AuthorImage, Link, ListItem, Wrapper } from '@/components';
 
@@ -24,75 +23,63 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Soe Thura, a Site Reliability Engineer, Cloud Solution Architect 
-            as well as AWS Community Builder, DevOps Engineer, and Backend Developer who wants 
-            to explore new technologies and solve real-world problems.
+            I'm a seasoned web developer specializing in web development and deployment, with over 3 years of professional experience. 
+            My role involves continuously exploring innovative methods to optimize and enhance software development processes, ensuring maximum efficiency and reliability. 
+            This proactive approach not only highlights my expertise but also promotes a culture of continuous learning and improvement within the tech community.
           </p>
           <p>
             Fast-forward to today, and I’ve had the privilege of working at a
-            software house -{' '}
+            software Company -{' '}
             <Link
-              href="https://www.onenex.co/"
+              href="https://visibleone.com/"
               target="_blank"
               className="text-accent"
             >
-              Onenex
+              Visibleone
             </Link>
             .
           </p>
           <p>
-            I've also provided training for DevOps and SRE practices at {' '}
-            <Link
-              href="https://www.devktops.com/"
-              target="_blank"
-              className="text-accent"
-            >
-              Dev KT Ops
-            </Link>
-            , where I've delivered DevOps and AWS Certification training to aspiring engineers.
-          </p>
-          <p>
-            As the co-founder of {' '}
-            <Link
-              href="https://www.mmunicode.org/"
-              target="_blank"
-              className="text-accent"
-            >
-              Myanmar Unicode Area
-            </Link> {' '}
-            I've played a pivotal role in driving Myanmar Unicode Migration initiatives, 
-            aligning with my passion for fostering technological advancements.
-          </p>
-          <p>
             In addition to my professional roles, I actively contribute thought 
-            leadership through articles on DevOps and AWS-related topics at {' '}
+            leadership through articles on Web Technology topics at {' '}
             <Link
               href="https://www.kalaung.org/"
               target="_blank"
               className="text-accent"
             >
-              Kalaung Tech
+              HKShing Tech
             </Link>. 
             This initiative not only highlights my expertise but also contributes 
             to creating a culture of continuous learning within the tech community.
           </p>
           <p>
-            My main focus these days is learning new technologies and architecting to growth my career.
+            My main focus these days is learning new technologies to growth my career.
           </p>
 
-          {list && (
-            <>
-              <p>{list.title}</p>
-              <ul className="grid w-3/3 grid-cols-3 gap-1 text-sm">
-                {list.items.map((item) => (
-                  <ListItem key={getId()}>{item}</ListItem>
-                ))}
-              </ul>
-            </>
-          )}
         </div>
         <AuthorImage src={img} alt={author.name} />
       </main>
+
+      {list && (
+              <>
+                <p className="mt-10">{list.title}</p>
+                <ul className="flex flex-wrap mt-5" style={{ gap: '4rem' }}>
+                  {list.items.map((category) => (
+                    <li key={category.title} className="w-1/7 mb-10">
+                      <strong className="mb-2 block">{category.title}</strong>
+                      <ul className="mt-4 space-y-1 text-sm">
+                        {category.items.map((item) => (
+                          <li key={item}>
+                            <ListItem>{item}</ListItem>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
     </Wrapper>
   ) : (
     <></>
