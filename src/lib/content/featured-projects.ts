@@ -17,7 +17,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
     {
       id: getId(),
       name: 'HongKong Methodist Centre',
-      description: 'First Telemedicine Platform in Myanmar.',
+      description: 'Community and Regional Support for the Hong Kong Methodists.',
       tasks:
         'Developed database structure for multiple languages.(English, Simplified Chinese, Traditional Chinese, Arabic, and Indonesian) using ORM Eloquent. Dynamic content and images, multiple pages, and complex business logic are all key components of our project.',
       url: 'https://p237.visibleone.io/en',

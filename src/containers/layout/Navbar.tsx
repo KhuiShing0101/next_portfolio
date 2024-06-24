@@ -72,7 +72,7 @@ const NavItem = ({ href, children, onClick, index, delay }: NavItemsProps) => {
 };
 
 const Navbar = () => {
-  const { cta, navLinks } = navbarSection;
+  const { cta } = navbarSection;
   const [navbarCollapsed, setNavbarCollapsed] = useState(false);
 
   const windowWidth = useWindowWidth();
@@ -109,7 +109,7 @@ const Navbar = () => {
       {(navbarCollapsed || windowWidth > md) && (
         <nav className="capitalize absolute text-sm duration-200 md:bg-transparent z-50 w-[90%] left-1/2 -translate-x-1/2 top-full h-max rounded-xl shadow-xl p-6 bg-bg-secondary md:blocks md:static md:w-auto md:left-auto md:transform-none md:top-auto md:rounded-none md:shadow-none md:p-0 md:h-auto">
           <ul className="flex flex-col items-stretch gap-3 list-style-none lg:gap-5 xl:gap-6 md:flex-row md:items-center">
-            {navLinks.map(({ name, url }, i) => (
+            {/* {navLinks.map(({ name, url }, i) => (
               <NavItem
                 key={i}
                 href={url}
@@ -119,7 +119,7 @@ const Navbar = () => {
               >
                 {name}
               </NavItem>
-            ))}
+            ))} */}
 
             <div className="flex items-center justify-between gap-5 xl:gap-6">
               {cta && (
@@ -128,7 +128,7 @@ const Navbar = () => {
                   href={cta.url}
                   sameTab={cta?.sameTab}
                   variants={slideIn({
-                    delay: ANIMATION_DELAY + navLinks.length / 10,
+                    // delay: ANIMATION_DELAY + navLinks.length / 10,
                     direction: 'down',
                   })}
                   initial="hidden"
@@ -137,7 +137,7 @@ const Navbar = () => {
                   {cta.title}
                 </Button>
               )}
-              <DarkModeButton
+              {/* <DarkModeButton
                 onClick={() => setNavbarCollapsed(false)}
                 variants={slideIn({
                   delay: ANIMATION_DELAY + (navLinks.length + 1) / 10,
@@ -145,7 +145,7 @@ const Navbar = () => {
                 })}
                 initial="hidden"
                 animate="show"
-              />
+              /> */}
             </div>
           </ul>
         </nav>

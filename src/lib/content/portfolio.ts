@@ -7,35 +7,29 @@
 import { StringKeyValueType } from '../types';
 
 export const socialLinks: StringKeyValueType = {
-  facebook: 'https://www.facebook.com/thixpin',
-  blog: 'https://hashnode.com/@thixpin',
-  twitter: 'https://twitter.com/thixpin',
-  github: 'https://github.com/thixpin',
-  linkedin: 'https://www.linkedin.com/in/thixpin/',
+  blog: '',
+  github: 'https://github.com/KhuiShing0101',
+  linkedin: 'https://www.linkedin.com/in/hk-shing-61b955215/',
 };
 
 export const author = {
-  name: 'Soe Thura',
-  email: 'thixpin@gmail.com',
+  name: 'ToRa',
+  email: 'harkhuishing.dev@gmail.com',
 };
 
 export const seoData = {
-  title: 'Soe Thura | Site Reliability Engineer',
+  title: 'ToRa | Web Developer',
   description:
-    'Soe Thura is a Site Reliability Engineer, Cloud Solution Architect, AWS Community Builder, DevOps Engineer, and 2x AWS Certified.',
+    'ToRa is a web developer',
   author: author.name,
   image:
     '/images/preview.png',
-  url: 'https://www.thixpin.me/',
+  url: 'https://www.hkshing.xyz/',
   keywords: [
     'GitHub',
-    'Soe Thura',
-    '@thixpin',
-    'thixpin',
-    'AWS Community Builder',
-    'AWS Certified',
-    'Site Reliability Engineer',
-    'Cloud Solution Architect',
-    'DevOps Engineer',
+    'ToRa',
+    '@ToRa',
+    'tora',
+    'web developer'
   ],
 };

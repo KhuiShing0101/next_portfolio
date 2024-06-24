@@ -13,7 +13,7 @@ export interface Section {
 }
 
 export interface NavbarSectionType {
-  navLinks: NavLinkType[];
+  // navLinks: NavLinkType[];
   cta: CTAType;
 }
 
