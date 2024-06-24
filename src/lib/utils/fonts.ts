@@ -1,14 +1,14 @@
-import {  Roboto_Mono } from 'next/font/google';
+import { Inter, Roboto_Mono } from 'next/font/google';
 
-// const inter = Inter({
-//   variable: '--font-inter',
-//   subsets: ['latin'],
-//   weight: [
-//     '400', // Regular
-//     '500', // Medium
-//     '700', // Bold
-//   ],
-// });
+const inter = Inter({
+  variable: '--font-inter',
+  subsets: ['latin'],
+  weight: [
+    '400', // Regular
+    '500', // Medium
+    '700', // Bold
+  ],
+});
 
 const robotoMono = Roboto_Mono({
   variable: '--font-roboto-mono',
@@ -22,6 +22,6 @@ const robotoMono = Roboto_Mono({
   ],
 });
 
-const fontVariables = ` ${robotoMono.variable}`;
+const fontVariables = `${inter.variable} ${robotoMono.variable}`;
 
 export default fontVariables;
