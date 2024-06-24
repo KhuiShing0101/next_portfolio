@@ -41,7 +41,7 @@ export const experienceSection: ExperienceSectionType = {
         ],
     },
     {
-        company: 'Soft-Guide Software House',
+        company: 'Soft-Guide 駿台グループ',
         companyUrl: 'https://satt.jp/',
         role: 'Web Developer',
         started: 'October 2022',

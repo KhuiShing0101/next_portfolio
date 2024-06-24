@@ -39,7 +39,7 @@ const About = () => {
             </Link>
             .
           </p>
-          <p>
+          {/* <p>
             In addition to my professional roles, I actively contribute thought 
             leadership through articles on Web Technology topics at {' '}
             <Link
@@ -51,7 +51,7 @@ const About = () => {
             </Link>. 
             This initiative not only highlights my expertise but also contributes 
             to creating a culture of continuous learning within the tech community.
-          </p>
+          </p> */}
           <p>
             My main focus these days is learning new technologies to growth my career.
           </p>

@@ -29,7 +29,7 @@ const Hero = () => {
         variants={slideUp({ delay: getAnimationDelay(0) })}
         initial="hidden"
         animate="show"
-        className="font-mono text-sm md:text-base text-accent"
+        className="font-mono text-sm md:text-base text-accent mt-20"
       >
         {subtitle}
       </motion.p>

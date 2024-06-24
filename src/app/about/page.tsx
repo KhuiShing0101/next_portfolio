@@ -10,7 +10,7 @@ const Page: NextPage = () => {
     return (
         <>
             <Layout>
-                <About />
+                {/* <About /> */}
                 <Contact />
             </Layout>
         </>
