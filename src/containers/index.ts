@@ -1,5 +1,4 @@
 import About from './About';
-// import Certifications from './Certifications';
 import Contact from './Contact';
 import Email from './Email';
 import Experience from './Experience';
@@ -15,7 +14,6 @@ import SocialLinks from './Social/SocialLinks';
 
 export {
   About,
-  // Certifications,
   Contact,
   Email,
   Experience,
