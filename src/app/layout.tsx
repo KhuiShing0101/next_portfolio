@@ -40,31 +40,31 @@ export const metadata: Metadata = {
     {
       rel: 'apple-touch-icon',
       sizes: '120x120',
-      url: '/favicons/favicon.png',
+      url: '/favicons/HKS_120x120.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '512x512',
-      url: '/favicons/favicon.png',
+      url: '/favicons/HKS_512x512.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '192x192',
-      url: '/favicons/favicon.png',
+      url: '/favicons/HKS_192x192.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '32x32',
-      url: '/favicons/favicon.png',
+      url: '/favicons/HKS_32x32.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '16x16',
-      url: '/favicons/favicon.png',
+      url: '/favicons/HKS_16x16.png',
     },
   ],
 };
