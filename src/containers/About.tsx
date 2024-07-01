@@ -23,7 +23,7 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            I'm a seasoned web developer specializing in web development and deployment, with over 3 years of professional experience. 
+            I'm a seasoned web developer specializing in web development and deployment, with over 4 years of professional experience. 
             My role involves continuously exploring innovative methods to optimize and enhance software development processes, ensuring maximum efficiency and reliability. 
             This proactive approach not only highlights my expertise but also promotes a culture of continuous learning and improvement within the tech community.
           </p>

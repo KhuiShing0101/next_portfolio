@@ -31,5 +31,5 @@ export const aboutSection: AboutSectionType = {
             }
         ],
     },
-    img: '/thixpin.jpg',
+    img: '/hks.png',
 };

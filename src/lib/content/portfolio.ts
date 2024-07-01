@@ -7,7 +7,7 @@
 import { StringKeyValueType } from '../types';
 
 export const socialLinks: StringKeyValueType = {
-  blog: '',
+  // blog: '',
   github: 'https://github.com/KhuiShing0101',
   linkedin: 'https://www.linkedin.com/in/hk-shing-61b955215/',
 };
@@ -18,7 +18,7 @@ export const author = {
 };
 
 export const seoData = {
-  title: 'ToRa | Web Developer',
+  title: 'ToRa | Harkhuishing℠',
   description:
     'ToRa is a web developer',
   author: author.name,
