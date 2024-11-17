@@ -62,7 +62,7 @@ export const experienceSection: ExperienceSectionType = {
         started: 'March 2021',
         upto: 'August 2023',
         tasks: [
-        'Developed student data and complex database structure as assigned by the senior developer.',
+        'Developed student data and complex database structure as assigned by the senior developer.' ,
         'Developed backend with RESTful API (Service and Repository) using PHP (Laravel framework).',
         'Developed frontend with Axios (data binding) using JavaScript (Vue framework)',
         'Developed using the Singleton design pattern (SOLID principles) for a high-performance and scalable PHP structure.',
