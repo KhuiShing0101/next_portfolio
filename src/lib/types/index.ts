@@ -11,6 +11,8 @@ export type SocialLinkType = {
 export type CTAType = {
   title: string;
   url: string;
+  title1: string;
+  url1: string;
   sameTab?: boolean;
 };
 

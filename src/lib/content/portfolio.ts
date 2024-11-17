@@ -24,7 +24,7 @@ export const seoData = {
   author: author.name,
   image:
     '/images/preview.png',
-  url: 'https://www.hkshing.xyz/',
+  url: 'https://www.harkhuishing.me/',
   keywords: [
     'GitHub',
     'ToRa',

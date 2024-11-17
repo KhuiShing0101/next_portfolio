@@ -4,11 +4,26 @@ export const experienceSection: ExperienceSectionType = {
     title: "where i've worked",
     experiences: [
     {
+        company: 'Brycen Myanmar',
+        companyUrl: 'https://www.brycenmyanmar.com.mm/',
+        role: 'Senior Software Developer',
+        started: 'Septemper 2024',
+        upto: 'present',
+        tasks: [
+        'As a Senior developer... ',
+        'Collaborating with the Japanese IT team, I design batch processes for CSV downloads, manage documentation, and implement new features.',
+            'Batch Processing: Develop shell scripts for CSV batches as per the 【出荷】バッチ概要',
+            'Documentation: Prepare screen designs (画面設計書), test cases, and evidence (エビデンス) for each feature',
+            'Team Collaboration: Work closely with the Japanese and Myanmar teams (Project Manager, Leader, Subleader, developers, and fresher supports)',
+            'Release & Improvement: Validate, finalize, and release features jointly to ensure system quality and efficiency.',
+        ],
+    },
+    {
         company: 'VisibleOne',
         companyUrl: 'https://visibleone.com/',
         role: 'Web Developer',
         started: 'August 2023',
-        upto: 'present',
+        upto: 'Septemper 2024',
         tasks: [
             'As a developer... ',
             'Main Services Modules such as Body-Check, DNA-Check, Nutritionist,Vaccine,Children Treatment and Emotional Therapy',
@@ -26,7 +41,7 @@ export const experienceSection: ExperienceSectionType = {
         companyUrl: 'https://visibleone.com/',
         role: 'Web Developer',
         started: 'August 2023',
-        upto: 'present',
+        upto: 'Septemper 2024',
         tasks: [
             'As a developer...',
             'Developed database structure for multiple languages',
@@ -44,7 +59,7 @@ export const experienceSection: ExperienceSectionType = {
         company: 'Soft-Guide 駿台グループ',
         companyUrl: 'https://satt.jp/',
         role: 'Web Developer',
-        started: 'October 2022',
+        started: 'March 2021',
         upto: 'August 2023',
         tasks: [
         'Developed student data and complex database structure as assigned by the senior developer.',
@@ -55,24 +70,11 @@ export const experienceSection: ExperienceSectionType = {
         ],
     },
     {
-        company: 'saltnpixel',
-        companyUrl: 'https://saltnpixel.com/',
-        role: 'Design and Development',
-        started: 'Feb 2020',
-        upto: 'Nov 2022',
-        tasks: [
-        'Designed export product Facebook page posts for Galanz, MayChawYin, USatGyi, and 555 Jaggery ',
-        'Developed an internal Website using Bootstrap, CSS and vanilla JavaScript.',
-        'I create the design, and if needed, it is reviewed by the content writer, senior designer, art director, and clients. If necessary, the design goes through revisions at each stage. ',
-        'My skill set includes Photoshop and Illustrator for design, and CSS and vanilla JavaScript for development.',
-        ],
-    },
-    {
         company: 'ATYS Japanese Language School',
         companyUrl: 'https://www.atys-academy.org/',
         role: 'Student',
         started: 'July 2018',
-        upto: 'Nov 2019',
+        upto: 'November 2019',
         tasks: [
         'Learning Japanese Language ( N5, N4, N3) できる日本語 ( 1:00 pm to 5 pm ) Mon to Fri',
         'Sushi-Ro スシロー restaurant Fried Fishs,Potato( 18:00-20:00 )  Mon-Tue-Wed ',
@@ -83,7 +85,7 @@ export const experienceSection: ExperienceSectionType = {
         company: 'Tomorrow Technology',
         companyUrl: 'https://opencorporates.com/companies/mm/1091-1998-1999',
         role: 'Service Technician',
-        started: 'Jan 2016',
+        started: 'January 2016',
         upto: 'December 2017',
         tasks: [
         'Installation Window OS and Applications',

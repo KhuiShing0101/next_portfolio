@@ -1,16 +1,13 @@
 import { NavbarSectionType } from '@/lib/types/sections';
 import { resumeFileName } from '@/lib/utils/config';
+import { resumeCsvName } from '@/lib/utils/config';
 
 export const navbarSection: NavbarSectionType = {
-    // navLinks: [
-    //     { name: 'about', url: '/about'},
-    //     { name: 'experience', url: '/experience' },
-    //     { name: 'skills', url: '/skills'},
-    //     { name: 'featured-projects', url: '/featured-projects' },
-    //     { name: 'contact', url: '/contact' },
-    // ],
+
     cta: {
         title: 'resume',
         url: `/${resumeFileName}`,
+        title1: '技術経歴書',
+        url1:`/${resumeCsvName}`,
     },
 }

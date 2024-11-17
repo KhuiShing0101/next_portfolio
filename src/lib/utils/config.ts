@@ -2,6 +2,8 @@ export const PROJECTS_INITIALLY = 6;
 
 export const resumeFileName = 'resume.pdf';
 
+export const resumeCsvName = 'resumeCSV.xls';
+
 export const gaTrackingId = 'UA-50249570-4';
 
 export const blurImageURL =
