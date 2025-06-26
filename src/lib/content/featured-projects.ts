@@ -12,7 +12,16 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
           "As a Senior Software Engineer, I developed and maintained the Scroll360 E-commerce project with a focus on product delivery, shipping solutions, and Excel CSV export functionality. Tasked by Brycen Japan, a Japan-based company, I contributed to building three major versions of the backend system: Version 1.0 (Zend PHP), Version 2.0 (PHP, Laravel 5.1), and Version 3.0 (PHP, Laravel 10). Each version was collaboratively developed by a team of 5 to 6 engineers, with my role encompassing RESTful API development, task assignment, and version upgrades.",
       url: 'https://www.scroll360.jp/service/system/',
       img: '/images/esharpamall.png',
-      tags: ['RESTful Api','Docker','NGINX','PHP','Laravel','AJAX'],
+      tags: ['RESTful Api','Docker','NGINX','Redis','MINIOS3','Laravel'],
+    }, {
+      id: getId(),
+      name: 'Life Young Healthy',
+      description: "Power Up Your Family's Wellness.",
+      tasks:
+        'I strategically developed Main Services Modules such as Body-Check, DNA-Check, Nutritionist,Vaccine,Children Treatment and Emotional Therapy.',
+      url: 'https://lyhealthy.com/en',
+      img: '/images/lifeyoung.png',
+      tags: ['TypeScript','NodeJs','NextJs','ReactJs'],
     },
     {
       id: getId(),
@@ -24,16 +33,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       img: '/images/Satt.png',
       tags: [ 'RESTful Api','PHP','SOLID design pattern Laravel', 'Vue',],
     },
-    {
-      id: getId(),
-      name: 'Life Young Healthy',
-      description: "Power Up Your Family's Wellness.",
-      tasks:
-        'I strategically developed Main Services Modules such as Body-Check, DNA-Check, Nutritionist,Vaccine,Children Treatment and Emotional Therapy.',
-      url: 'https://lyhealthy.com/en',
-      img: '/images/lifeyoung.png',
-      tags: ['PHP','Laravel','TypeScript','React'],
-    },
+   
     {
       id: getId(),
       name: 'HongKong Methodist Centre',

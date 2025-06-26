@@ -2,7 +2,7 @@ export const PROJECTS_INITIALLY = 6;
 
 export const resumeFileName = 'resume.pdf';
 
-export const resumeCsvName = 'resumeCSV.xls';
+export const resumeCsvName = '履歴書.xlsx';
 
 export const gaTrackingId = 'UA-50249570-4';
 

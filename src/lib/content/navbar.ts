@@ -7,7 +7,7 @@ export const navbarSection: NavbarSectionType = {
     cta: {
         title: 'resume',
         url: `/${resumeFileName}`,
-        title1: '技術経歴書',
+        title1: '履歴書',
         url1:`/${resumeCsvName}`,
     },
 }
