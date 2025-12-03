@@ -30,7 +30,7 @@ export interface ListItemType {
   items: string[];
 }
 export interface AboutSectionType extends Section {
-  list: {
+  list?: {
     title: string;
     items: ListItemType[];
   };

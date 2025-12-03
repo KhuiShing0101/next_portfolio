@@ -68,7 +68,7 @@ const TabList = ({ experiences }: Props) => {
             </svg>
           </Link>
           <p className="font-mono text-xs md:text-sm capitalize text-text bg-accent-light px-3 py-1.5 rounded-lg inline-block">
-            {started} - {upto}
+            {`${started} - ${upto}`}
           </p>
         </div>
 
