@@ -25,14 +25,14 @@ const FeaturedProject = ({
   return (
     <motion.div
       className={cn(
-        'relative min-h-[280px] sm:min-h-[360px] h-full overflow-hidden lg:overflow-visible rounded-lg lg:rounded-xl shadow-lg lg:shadow-none text-center lg:text-right',
+        'relative min-h-[280px] sm:min-h-[360px] h-full overflow-hidden lg:overflow-visible rounded-2xl lg:rounded-3xl shadow-2xl lg:shadow-none text-center lg:text-right group',
         align === 'left' && 'lg:text-left'
       )}
       {...rest}
     >
       <div
         className={cn(
-          'w-full lg:max-w-[60%] absolute inset-0 h-full -z-20 lg:z-0 lg:object-contain rounded overflow-hidden shadow-2xl group',
+          'w-full lg:max-w-[60%] absolute inset-0 h-full -z-20 lg:z-0 lg:object-contain rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl',
 
           align === 'left' && 'ml-auto'
         )}
@@ -42,7 +42,7 @@ const FeaturedProject = ({
           alt={name}
           width={720}
           height={480}
-          className="h-full w-full object-cover duration-200 group-hover:scale-105 transition-transform"
+          className="h-full w-full object-cover duration-500 group-hover:scale-110 group-hover:rotate-1 transition-all"
           placeholder="blur"
           blurDataURL={blurImageURL}
         />
@@ -77,18 +77,18 @@ const FeaturedProject = ({
           </h2>
         </div>
 
-        <div className="lg:bg-bg-secondary rounded-sm lg:shadow-lg lg:p-5">
+        <div className="lg:glass-strong rounded-xl lg:shadow-2xl lg:p-6 transition-all duration-300 group-hover:bg-bg-secondary/90">
           <div
             className={cn(
               'lg:max-w-sm text-slate-200 lg:text-inherit text-sm lg:text-base',
               align === 'right' && 'ml-auto'
             )}
           >
-            <p className="text-dark-1">{description}</p>
-            <div className="text-xs hidden lg:block capitalize font-mono text-accent my-3 lg:my-2 lg:mt-3">
+            <p className="text-dark-1 leading-relaxed">{description}</p>
+            <div className="text-xs hidden lg:block capitalize font-mono text-accent my-3 lg:my-2 lg:mt-3 font-semibold">
               tasks / achievements
             </div>
-            <div className="text-base hidden lg:block lg:text-sm">{tasks}</div>
+            <div className="text-base hidden lg:block lg:text-sm text-text">{tasks}</div>
           </div>
         </div>
 

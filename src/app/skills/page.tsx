@@ -1,7 +1,7 @@
 import {
+  Contact,
   Layout,
   Skills,
-  Contact,
 } from '@/containers';
 
 import type { NextPage } from 'next';

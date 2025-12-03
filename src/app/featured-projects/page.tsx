@@ -1,9 +1,9 @@
 import {
-    Layout,
-    FeaturedProjects,
     Contact,
+    FeaturedProjects,
+    Layout,
 } from '@/containers';
-  
+
   import type { NextPage } from 'next';
   
   const Page: NextPage = () => {

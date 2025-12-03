@@ -18,18 +18,18 @@ export const author = {
 };
 
 export const seoData = {
-  title: 'ToRa | Harkhuishing℠',
+  title: 'Harkhuishing- Software Engineer Portfolio',
   description:
-    'ToRa is a web developer',
+    'ToRa is a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building responsive full-stack web applications.',
   author: author.name,
   image:
-    '/images/preview.png',
+    '/images/preview.webp',
   url: 'https://www.harkhuishing.me/',
   keywords: [
     'GitHub',
     'ToRa',
     '@ToRa',
     'tora',
-    'web developer'
+    'Software Engineer',
   ],
 };

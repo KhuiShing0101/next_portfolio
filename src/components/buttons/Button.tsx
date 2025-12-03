@@ -49,11 +49,11 @@ const Button = (props: Props & MotionProps) => {
 
   const classes = `${
     size === 'sm'
-      ? 'p-2 px-4 text-sm border-[1.5px] '
-      : 'text-sm p-4 px-6 border-2'
+      ? 'p-3 px-5 text-sm'
+      : 'text-base p-4 px-8'
   } block ${
     center ? 'mx-auto' : ''
-  } w-fit font-mono capitalize rounded border-accent text-accent hover:bg-accent-light focus:outline-none focus:bg-accent-light duration-150 cursor-pointer ${className}`;
+  } w-fit font-mono capitalize rounded-xl glass-strong border-2 border-accent text-accent hover:bg-accent hover:text-white focus:outline-none focus:bg-accent focus:text-white duration-300 cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-accent/30 hover:-translate-y-0.5 transition-all font-semibold ${className}`;
 
   // TODO: Needs to improve this framer motion logic
   if (props.type === 'link') {

@@ -1,12 +1,12 @@
 import {
   About,
-  FeaturedProjects,
   Contact,
   Experience,
-  Hero,
+  FeaturedProjects,
   Layout,
   // Projects,
   Skills,
+  SkillSets,
 } from '@/containers';
 
 import type { NextPage } from 'next';
@@ -21,10 +21,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Layout>
-        <Hero />
         <About />
-        <FeaturedProjects />
         <Experience />
+        <SkillSets />
+        <FeaturedProjects />
         <Skills />
         <Contact />
       </Layout>

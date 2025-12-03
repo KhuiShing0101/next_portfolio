@@ -1,9 +1,9 @@
 import {
-    Layout,
-    Hero,
     Contact,
+    Hero,
+    Layout,
 } from '@/containers';
-  
+
   import type { NextPage } from 'next';
   
   const Page: NextPage = () => {

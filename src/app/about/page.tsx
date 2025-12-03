@@ -1,5 +1,4 @@
 import {
-    About,
     Contact,
     Layout,
 } from '@/containers';

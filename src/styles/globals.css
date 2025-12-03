@@ -3,38 +3,42 @@
 @tailwind utilities;
 
 @layer base {
-  /* Color variables for future use */
   :root {
-    /* --color-bg: #fcfaf8; */
-    /* --color-accent: #14cf93; */
-    /* --color-accent: ##64ffda; */
-    /* --color-accent: #61dafb); */
-    /* --color-text: #383838; */
-    /* --color-dark-2: #282828; */
-    /* --color-dark-3: #a2a2a2; */
+    /* Light Theme - Modern vibrant colors */
+    --color-bg: #fafbfc;
+    --color-bg-secondary: rgba(255, 255, 255, 0.8);
+    --color-accent: #3b82f6;
+    --color-accent-secondary: #8b5cf6;
+    --color-accent-light: rgba(59, 130, 246, 0.1);
+    --color-accent-torch: rgba(59, 130, 246, 0.15);
+    --color-text: #64748b;
+    --color-dark-1: #0f172a;
+    --color-dark-2: #334155;
+    --color-dark-3: #cbd5e1;
 
-    /* Light Theme */
-    --color-bg: theme(colors.slate.50);
-    --color-bg-secondary: theme(colors.white);
-    --color-accent: theme(colors.sky.500);
-    --color-accent-light: theme(colors.sky.500/0.1);
-    --color-accent-torch: theme(colors.blue.700/0.15);
-    --color-text: theme(colors.slate.600);
-    --color-dark-1: theme(colors.slate.900);
-    --color-dark-2: theme(colors.slate.700);
-    --color-dark-3: theme(colors.slate.300);
+    /* Gradient variables */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-accent: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    --gradient-warm: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-cool: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   }
 
-  /* Dark Theme */
+  /* Dark Theme - Enhanced with rich colors */
   .dark {
-    --color-bg: theme(colors.slate.900);
-    --color-bg-secondary: theme(colors.slate.800);
-    --color-accent: theme(colors.sky.400);
-    --color-accent-light: theme(colors.sky.400/0.1);
-    --color-text: theme(colors.slate.400);
-    --color-dark-1: theme(colors.slate.200);
-    --color-dark-2: theme(colors.slate.300);
-    --color-dark-3: theme(colors.slate.700);
+    --color-bg: #0f172a;
+    --color-bg-secondary: rgba(30, 41, 59, 0.8);
+    --color-accent: #60a5fa;
+    --color-accent-secondary: #a78bfa;
+    --color-accent-light: rgba(96, 165, 250, 0.1);
+    --color-text: #94a3b8;
+    --color-dark-1: #f1f5f9;
+    --color-dark-2: #e2e8f0;
+    --color-dark-3: #475569;
+
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-accent: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+    --gradient-warm: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-cool: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   }
 
   @font-face {
@@ -45,15 +49,141 @@
   * {
     @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
   }
+
+  /* Animated gradient background */
+  body {
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 20% 50%,
+        rgba(59, 130, 246, 0.08) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(139, 92, 246, 0.08) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 40% 20%,
+        rgba(236, 72, 153, 0.06) 0%,
+        transparent 50%
+      );
+    pointer-events: none;
+    z-index: -1;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
 }
 
 /* TYPOGRAPHY */
 
 .heading-secondary,
 .h2 {
-  @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2;
+  @apply text-3xl sm:text-4xl lg:text-5xl capitalize font-bold mb-8 sm:mb-12 text-dark-1 bg-clip-text;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
+
 .heading-tertiary,
 .h3 {
-  @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-dark-2;
+  @apply text-xl sm:text-2xl tracking-wide capitalize font-semibold text-dark-2;
+}
+
+/* MODERN UTILITIES */
+
+@layer utilities {
+  /* Glassmorphism */
+  .glass {
+    @apply backdrop-blur-md border;
+    background-color: var(--color-bg-secondary);
+    border-color: rgba(203, 213, 225, 0.2);
+  }
+
+  .dark .glass {
+    border-color: rgba(71, 85, 105, 0.2);
+  }
+
+  .glass-strong {
+    @apply backdrop-blur-xl border;
+    background-color: var(--color-bg-secondary);
+    border-color: rgba(203, 213, 225, 0.3);
+  }
+
+  .dark .glass-strong {
+    border-color: rgba(71, 85, 105, 0.3);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-warm {
+    background: var(--gradient-warm);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Modern card hover effects */
+  .card-modern {
+    @apply glass rounded-2xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+  }
+
+  .card-glow {
+    @apply relative overflow-hidden;
+  }
+
+  .card-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+    transition: left 0.5s;
+  }
+
+  .card-glow:hover::before {
+    left: 100%;
+  }
+
+  /* 3D Transform effects */
+  .transform-3d {
+    @apply transition-transform duration-300;
+    transform-style: preserve-3d;
+  }
+
+  .transform-3d:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(2deg) scale(1.02);
+  }
 }

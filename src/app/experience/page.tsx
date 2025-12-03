@@ -1,9 +1,9 @@
 import {
-    Layout,
-    Experience,
     Contact,
+    Experience,
+    Layout,
 } from '@/containers';
-  
+
   import type { NextPage } from 'next';
   
   const Page: NextPage = () => {

@@ -2,7 +2,7 @@
 import { aboutSection } from '@/lib/content/about';
 import { author } from '@/lib/content/portfolio';
 
-import { AuthorImage, Link, ListItem, Wrapper } from '@/components';
+import { AuthorImage, ListItem, Wrapper } from '@/components';
 
 import { getSectionAnimation } from '@/styles/animations';
 
@@ -21,39 +21,15 @@ const About = () => {
     <Wrapper id="about" {...getSectionAnimation}>
       <h2 className="heading-secondary">{title}</h2>
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
-        <div className="space-y-4 lg:w-3/5">
-          <p>
-            I'm a seasoned web developer specializing in web development and deployment, with over 5 years of professional experience. 
-            My role involves continuously exploring innovative methods to optimize and enhance software development processes, ensuring maximum efficiency and reliability. 
-            This proactive approach not only highlights my expertise but also promotes a culture of continuous learning and improvement within the tech community.
+        <div className="space-y-5 lg:w-3/5 text-base md:text-lg leading-relaxed">
+          <p className="glass-strong p-6 rounded-2xl border-l-4 border-accent">
+            I'm a seasoned web developer specializing in web development and deployment, with over
+            I'm a web developer with a strong focus on web development and deployment, backed by over <span className="gradient-text font-semibold">5 years of professional experience</span>.
+          I specialize in driving efficiency, reliability, and continuous improvement within software
+            development processes
           </p>
-          <p>
-            Fast-forward to today, and I’ve had the privilege of working at a
-            software Company -{' '}
-            <Link
-              href="https://visibleone.com/"
-              target="_blank"
-              className="text-accent"
-            >
-              Visibleone
-            </Link>
-            .
-          </p>
-          {/* <p>
-            In addition to my professional roles, I actively contribute thought 
-            leadership through articles on Web Technology topics at {' '}
-            <Link
-              href="https://www.kalaung.org/"
-              target="_blank"
-              className="text-accent"
-            >
-              HKShing Tech
-            </Link>. 
-            This initiative not only highlights my expertise but also contributes 
-            to creating a culture of continuous learning within the tech community.
-          </p> */}
-          <p>
-            My main focus these days is learning new technologies to growth my career.
+          <p className="glass p-5 rounded-2xl bg-gradient-to-br from-accent-light to-transparent">
+            My main focus these days is <span className="gradient-text font-semibold">learning new technologies</span> to growth my career.
           </p>
 
         </div>

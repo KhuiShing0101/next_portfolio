@@ -34,7 +34,7 @@ const Hero = () => {
         {subtitle}
       </motion.p>
 
-      <div className="max-w-5xl text-4xl font-bold tracking-tighter md:text-7xl">
+      <div className="max-w-5xl text-4xl font-bold tracking-tighter md:text-7xl lg:text-8xl">
         <motion.h1
           variants={slideUp({ delay: getAnimationDelay(1) })}
           initial="hidden"
@@ -47,7 +47,7 @@ const Hero = () => {
           variants={slideUp({ delay: getAnimationDelay(2) })}
           initial="hidden"
           animate="show"
-          className="leading-[1.2]"
+          className="leading-[1.2] gradient-text"
         >
           {tagline}
         </motion.h1>
@@ -57,7 +57,7 @@ const Hero = () => {
         variants={slideUp({ delay: getAnimationDelay(3) })}
         initial="hidden"
         animate="show"
-        className="max-w-xl text-base md:text-lg"
+        className="max-w-2xl text-base md:text-lg lg:text-xl text-text leading-relaxed"
       >
         {description}
       </motion.p>

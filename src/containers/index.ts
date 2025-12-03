@@ -9,6 +9,7 @@ import Layout from './layout/Layout';
 import Navbar from './layout/Navbar';
 import Projects from './Projects';
 import Skills from './Skills';
+import SkillSets from './SkillSets';
 import Social from './Social';
 import SocialLinks from './Social/SocialLinks';
 
@@ -24,6 +25,7 @@ export {
   Navbar,
   Projects,
   Skills,
+  SkillSets,
   Social,
   SocialLinks,
 };
