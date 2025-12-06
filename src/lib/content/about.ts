@@ -2,5 +2,5 @@ import { AboutSectionType } from '@/lib/types/sections'
 
 export const aboutSection: AboutSectionType = {
     title: 'about me',
-    img: '/hks.jpg'
+    img: '/hks.png'
 };

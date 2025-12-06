@@ -19,11 +19,20 @@ export type CTAType = {
 // env
 export type ExperienceType = {
   role: string;
+  role_ja?: string;
   company: string;
   companyUrl: string;
+  projectUrl?: string;
+  projectname?: string;
+  projectname_ja?: string;
   started: Date | string;
+  started_ja?: string;
   upto: Date | 'present' | string;
+  upto_ja?: string;
+  duration?: string;
+  duration_ja?: string;
   tasks: string[];
+  tasks_ja?: string[];
 };
 
 export type ProjectType = {

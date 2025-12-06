@@ -53,7 +53,7 @@ const Button = (props: Props & MotionProps) => {
       : 'text-base p-4 px-8'
   } block ${
     center ? 'mx-auto' : ''
-  } w-fit font-mono capitalize rounded-xl glass-strong border-2 border-accent text-accent hover:bg-accent hover:text-white focus:outline-none focus:bg-accent focus:text-white duration-300 cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-accent/30 hover:-translate-y-0.5 transition-all font-semibold ${className}`;
+  } w-fit font-mono capitalize rounded-xl glass-strong border-2 border-accent text-accent dark:text-white hover:bg-accent hover:text-white focus:outline-none focus:bg-accent focus:text-white duration-300 cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-accent/30 hover:-translate-y-0.5 transition-all font-semibold ${className}`;
 
   // TODO: Needs to improve this framer motion logic
   if (props.type === 'link') {
@@ -61,7 +61,7 @@ const Button = (props: Props & MotionProps) => {
     removeKeys<Props & LinkProps>(motionProps, buttonProps);
 
     return (
-      <motion.span {...motionProps}>
+      <motion.span className="inline-block" {...motionProps}>
         <Link
           className={classes}
           href={props.href}

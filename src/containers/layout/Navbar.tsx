@@ -1,5 +1,6 @@
 'use client';
 import { navbarSection } from '@/lib/content/navbar';
+import { useTranslation } from '@/lib/hooks/use-translation';
 
 import { Button } from '@/components';
 
@@ -9,14 +10,15 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const { cta } = navbarSection;
+  const { t } = useTranslation();
 
   return (
-    <motion.header
+    <motion.div
       variants={fadeIn(0.5)}
       initial="hidden"
       animate="show"
       id="navbar"
-      className="sticky top-0 inset-x-0 z-50 flex items-center justify-end px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg bg-bg/80 shadow-sm"
+      className="fixed top-4 left-4 md:top-6 md:left-8 z-50"
     >
       {cta && (
         <div className="flex items-center gap-3 md:gap-5">
@@ -30,7 +32,7 @@ const Navbar = () => {
             initial="hidden"
             animate="show"
           >
-            {cta.title}
+            {t.nav.resume}
           </Button>
           <Button
             type="link"
@@ -42,11 +44,11 @@ const Navbar = () => {
             initial="hidden"
             animate="show"
           >
-            {cta.title1}
+            {t.nav.rirekisho}
           </Button>
         </div>
       )}
-    </motion.header>
+    </motion.div>
   );
 };
 

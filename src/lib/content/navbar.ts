@@ -5,7 +5,7 @@ import { resumeCsvName } from '@/lib/utils/config';
 export const navbarSection: NavbarSectionType = {
 
     cta: {
-        title: 'resume',
+        title: 'CV',
         url: `/${resumeFileName}`,
         title1: '履歴書',
         url1:`/${resumeCsvName}`,

@@ -1,5 +1,6 @@
 import { seoData } from '@/lib/content/portfolio';
 import ThemeProvider from '@/lib/hooks/use-theme';
+import LanguageProvider from '@/lib/hooks/use-language';
 import fontVariables from '@/lib/utils/fonts';
 
 import Cursor from '@/components/ui/Cursor';
@@ -82,7 +83,9 @@ export default function RootLayout({
       <body className={`text-text bg-bg ${fontVariables}`}>
         <Analytics/>
         <Cursor className="hidden dark:lg:block" />
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
